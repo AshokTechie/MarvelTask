@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel task</title>
+    <style>
+        body{
+          background-color:rgb(46, 225, 225);
+          transition: background-color 0.3s ease;
+        }
+        .prod{
+            text-align: center;
+            margin-top: 20%;
+        }
+      .but{
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: rgb(161, 127, 255);
+        cursor: pointer;
+
+      }
+    
+
+    </style>
+</head>
+<body>
+   <div class="prod">
+     <h1 >Hii Marvel this is Ashok H</h1>
+    <h2 >Welcome to my website</h2>
+    <button class="but" onclick="togglecolor()">Click Me! to toggle</button>
+</div>
+<script>
+function togglecolor(){
+  const currentColor=document.body.style.backgroundColor;
+  if(currentColor==='rgb(46, 225, 225);'||currentColor===''){
+    document.body.style.backgroundColor='violet';
+  }else{
+    document.body.backgroundColor='';
+  }
+}
+</script>
+</body>
+</html>
